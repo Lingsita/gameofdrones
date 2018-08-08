@@ -7,8 +7,8 @@ DB: Sqlite3
 Run:
 docker-compose up 
 django:
-http://localhost:8000/api/1.0/
-http://localhost:8000/api/1.0/docs
+server: http://localhost:8000/api/1.0/
+docs: http://localhost:8000/api/1.0/docs
 
 angular:
 http://localhost:8010
