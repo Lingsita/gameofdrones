@@ -1,0 +1,8 @@
+Django==1.11
+djangorestframework
+markdown
+coreapi
+django-filter
+django-request-logging
+django-cors-headers==2.2.0
+psycopg2

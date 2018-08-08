@@ -1,0 +1,16 @@
+FROM node:8 as build-stage
+WORKDIR /app
+COPY package*.json /app/
+RUN npm install
+COPY ./ /app/
+ARG configuration=production
+RUN npm run build -- --output-path=./dist/out --configuration $configuration
+
+
+FROM nginx:1.13-alpine
+COPY --from=build-stage /app/dist/gameofdronesfront/ /usr/share/nginx/html/
+
+COPY --from=build-stage /app/nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

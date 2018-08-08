@@ -1,0 +1,14 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Round</th>
+      <th scope="col">Winner</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="(matches | async); let matches">
+    <tr *ngFor="let match of matches">
+      <th scope="row">{{match.round}}</th>
+      <td>{{match.winner.username}} </td>
+    </tr>
+  </tbody>
+</table>

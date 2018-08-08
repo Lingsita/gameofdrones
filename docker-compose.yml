@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  angular:
+    build: ./gameofdronesfront
+    ports:
+      - "8010:80"
+  django:
+    build: ./gameofdrones
+    command: ./docker-entrypoint.sh
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    

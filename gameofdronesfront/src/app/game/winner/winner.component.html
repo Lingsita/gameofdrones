@@ -1,0 +1,9 @@
+<p>
+  We have a WINNER!
+</p>
+
+<div *ngIf="(final_winner | async); let winner">{{ winner.username}} is the new EMPEROR</div>
+
+<a class="btn btn-success" routerLink="/">
+  <i class="fas fa-star" title="Play"> Play Again</i>
+</a>

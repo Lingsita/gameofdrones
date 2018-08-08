@@ -1,0 +1,4 @@
+db.sqlite3
+error_log_file.log
+request_log_file.log
+.idea/

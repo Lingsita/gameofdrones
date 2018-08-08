@@ -1,0 +1,73 @@
+.choice-card{
+    width: 95%;
+    border: 10px solid #fff;
+    border-radius: 16px;
+    text-align: center;
+    background-color: #a6bee8;
+    cursor: pointer;
+
+    i{
+        padding-top: 70px; 
+        padding-bottom: 70px; 
+        font-size: 90px;
+        color: #fff;
+    }
+    &:hover{
+        background-color: #759ee6;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    .choice-card{
+        margin-top: 10px;
+        border: 6px solid #fff;
+        cursor: pointer;    
+        i{
+            padding-top: 10px; 
+            padding-bottom: 10px; 
+            font-size: 30px;
+        }       
+    }
+}
+@media (max-width: 768px) { 
+    .choice-card{
+        border: 6px solid #fff;
+        cursor: pointer;    
+        i{
+            padding-top: 30px; 
+            padding-bottom: 30px; 
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 996px) { 
+    .choice-card{
+        border: 6px solid #fff;
+        cursor: pointer;    
+        i{
+            padding-top: 30px; 
+            padding-bottom: 30px; 
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 1200px) { 
+    .choice-card{
+        border: 6px solid #fff;
+        cursor: pointer;    
+        i{
+            padding-top: 50px; 
+            padding-bottom: 50px; 
+            font-size: 40px;
+            color: #fff;
+        }
+    }
+ }
+
